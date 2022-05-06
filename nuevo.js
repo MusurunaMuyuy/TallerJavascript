@@ -8,3 +8,17 @@ for (var i = 0; i < inputs.length; i++){
         }
     });
 }
+
+
+function validarClaves(){
+    var password1= document.getElementById.value;
+    var password2 = document.getElementById.value;
+    if (password1 != password2) {
+        alert ("Las claves introducidas no son iguales");
+        return false;
+        }
+        else {
+        alert("Contraseña correcta");
+        return true;
+              }
+}

@@ -35,10 +35,15 @@
     <br>
     <br>
     <br>
-    <input type="password" class="formulario__input">
+    <input type="password" class="formulario__input" 
+    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,11}$" 
+    title="Debe contener 8 o más carácteres, Mayúsculas, Minúsculas, Números, Carácteres especiales" required>
     <label for="" class="formulario__label">Contraseña</label>
-    <input type="password" class="formulario__input">
+    <input type="password" class="formulario__input"   
+     pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,11}$" 
+     title="Debe contener 8 o más carácteres, Mayúsculas, Minúsculas, Números, Carácteres especiales" required>
     <label for=""class="formulario__label">Confirmar contraseña</label>
+
     <input type="submit" class="formulario__submit">
  </form>
  <script src="nuevo.js"></script>
