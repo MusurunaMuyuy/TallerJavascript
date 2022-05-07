@@ -1,3 +1,5 @@
+var boton =  document.getElementById("boton");
+boton.style.display = "none";//oculta el boton
 
 var inputs =document.getElementsByClassName('formulario__input');
 for (var i = 0; i < inputs.length; i++){
@@ -32,8 +34,6 @@ function upperCase() {
         alert(""+text.value.toUpperCase())
  }
 
-
-
  function validarClaves(){
     var password1= document.getElementById('password1').value;
     var password2 = document.getElementById('password2').value;
@@ -44,4 +44,17 @@ function upperCase() {
         alert("Las claves son distintas");
         return true;
         }
+}
+
+function pruebaemail(){
+    var email= document.getElementById('email').value;
+	re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+	if(!re.exec(email)){
+		alert('email no valido');
+        boton.style.display = "none";
+	}
+	else {
+        alert('email valido');
+        boton.style.display = "block";
+    }
 }

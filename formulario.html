@@ -24,28 +24,28 @@
     <br>
     <br>
     <div  id="content" style="display: none;">
-      <input type="text" class="formulario__input">
-    <label for="" class="formulario__label">Nombre</label>
-    <input type="text" id="nombre" onBlur="upperCase()" class="formulario__input">
-    <label for="" class="formulario__label">Apellido</label>
-    <input type="text" class="formulario__input">
-    <label for="" class="formulario__label">Email</label>
-    <label class="formulario-label">Fecha de nacimiento</label>
-    <br>
-    <input type="date" id="fecha-nacimiento" name="feha-nacimiento"/>
-    <br>
-    <br>
-    <br>
-    <input type="password" class="formulario__input"  id="password1"
-     pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,11}$" 
-     title="Debe contener al menos 8 o más carácteres entre ellos: mayúsculas, minúsculas, múmeros y carácteres especiales" required>    
-    <label for="" class="formulario__label">Contraseña</label>
-    <input type="password" class="formulario__input"   id="password2" 
-     pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,11}$" 
-     title="Debe contener al menos 8 o más carácteres entre ellos: mayúsculas, minúsculas, múmeros y carácteres especiales" required>
-     
-    <label for=""class="formulario__label">Confirmar contraseña</label>
-    <input type="button" value="Enviar" onClick="validarClaves()" class="formulario__submit">
+      <input type="text" class="formulario__input" id="nombre" onBlur="upperCase()">
+      <label for="" class="formulario__label">Nombre</label>
+      <input type="text"  class="formulario__input" id="apellido">
+      <label for="" class="formulario__label">Apellido</label>
+      <input type="email" class="formulario__input" id="email" onBlur="pruebaemail()">
+      <label for="" class="formulario__label">Email</label>
+      <label class="formulario-label">Fecha de nacimiento</label>
+      <br>
+      <input type="date" id="fecha-nacimiento" name="feha-nacimiento"/>
+      <br>
+      <br>
+      <br>
+      <input type="password" class="formulario__input"  id="password1"
+      pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,11}$" 
+      title="Debe contener al menos 8 o más carácteres entre ellos: mayúsculas, minúsculas, múmeros y carácteres especiales" required>    
+      <label for="" class="formulario__label">Contraseña</label>
+      <input type="password" class="formulario__input"   id="password2" 
+      pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,11}$" 
+      title="Debe contener al menos 8 o más carácteres entre ellos: mayúsculas, minúsculas, múmeros y carácteres especiales" required>
+      
+      <label for=""class="formulario__label">Confirmar contraseña</label>
+      <button type="button" value="Enviar" onClick="validarClaves()" class="formulario__submit" id="boton">Enviar</button>
     </div>
     
  </form>
